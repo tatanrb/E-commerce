@@ -12,7 +12,7 @@ def index(request):
     portada_ropa = Producto.objects.filter(categoria=categoria_ropa.id)[0:3]
     print(portada_ropa)
 
-    return render(request, 'index.html', {
+    return render(request, 'index2.html', {
         "portada_ropa": portada_ropa
     })
 
